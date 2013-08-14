@@ -26,6 +26,18 @@
   * Example 2 css style for example, font-size-adjust: 0.5;
   * Example CSS style for one such border-left: solid red
  * 
+  Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,  
+  CssBrowser, CssVersion. Klasa ma za zadanie  wczytywania  odpowiednich styli 
+  css w zależności od przeglądarki np. Mozilla , IE itd. 
+  Klasa ponadto rozpoznaje rozdzielczość ekranu, co za tym idzie dostosowuje się do danego urządzenia np.
+  tabletu, telefonu itp. Wczytując odpowiedni styl dla tego urządzenia. 
+  Rozpoznaje także wersję obsługiwanego stylu przez przeglądarkę.
+  Wszystko to powoduje znaczne przyśpieszenie wczytywania strony,
+  dlatego że są pobierane tylko te style, które są akurat w danym momencie potrzebne.
+  W klasie znajdziemy jeszcze parę innych potrzebnych rzeczy do obsługi strony WWW, 
+  które mogą  nam ułatwić pracę. Sprawdzenie obsługi javascript, cookiesmedia itp. 
+  Klasa pozwoli bardziej wydajniej przygotowywać  css responsieive 
+  dla urządzeń a także dla naszych aplikacji.
  * Klasa do prawidłowego działania potrzebuje biblioteki browscap.ini
  *  ############# Browser ##################
  * Przykład stylu dla opera np. "-o-linear"
