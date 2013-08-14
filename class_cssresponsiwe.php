@@ -50,13 +50,13 @@
  * @Site www.joomla-cms.com.pl 
  */ 
  
- /* ##### FACEBOKE #######
-<meta property="og:site_name" content="WebHelp" />
-<meta property="og:title" content="wp-cli - administracja WordPressem z linii komend" />
-<meta property="og:description" content=" Krótki opis treści" /> 
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://webhelp.pl/blog/wpcli-administracja-wordpressem-z-linii-komend/" />
-<meta property="og:image" content="http://webhelp.pl/pictures/blog/wordpress-logo_654.png" />
+ /* ##### FACEBOKE ####### ner 2.0
+        <meta property="og:site_name" content="Sterownia" />
+        <meta property="og:title" content="Slider Aukcji Allegro" />
+        <meta property="og:description" content=" Moduł do wyświetlania naszych aukcji allegro" /> 
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.joomla-cms.com.pl/pl/komponenty/slider-aukcji-allegro.html" />
+        <meta property="og:image" content="http://www.joomla-cms.com.pl/images_ber34/slider aukcji_front_2.jpg" />
   */ 
 class CssResponsive
 {
