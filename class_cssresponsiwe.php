@@ -57,7 +57,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://webhelp.pl/blog/wpcli-administracja-wordpressem-z-linii-komend/" />
 <meta property="og:image" content="http://webhelp.pl/pictures/blog/wordpress-logo_654.png" />
-  */
+  */ 
 class CssResponsive
 {
     ######################################### Browser ##############################################################################
