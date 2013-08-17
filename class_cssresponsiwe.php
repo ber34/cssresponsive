@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion.
  *  Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc. 
  * Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc.
@@ -9,10 +9,9 @@
  * In the classroom you will find a few other things you need to use a web page that may help facilitate the work.
  *  Check javascript, cookiesmedia etc.
  *  Class will prepare more efficiently css responsieive for devices and for our applications.
- * 
- * 
+
  *  Class for proper operation of the library needs browscap.ini
- * 
+
   * # # # # # # # ###### Browser ##### # # # # # # # # # # # # #
   * Example of style for opera such as "-o-linear"
   * Example of style for FIREFOX example, "-moz-linear"
@@ -25,7 +24,7 @@
   * Example 3 css style for example, box-shadow: 10px 10px 5px # FFFFFF;
   * Example 2 css style for example, font-size-adjust: 0.5;
   * Example CSS style for one such border-left: solid red
- * 
+ 
   Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,  
   CssBrowser, CssVersion. Klasa ma za zadanie  wczytywania  odpowiednich styli 
   css w zależności od przeglądarki np. Mozilla , IE itd. 
@@ -38,6 +37,7 @@
   które mogą  nam ułatwić pracę. Sprawdzenie obsługi javascript, cookiesmedia itp. 
   Klasa pozwoli bardziej wydajniej przygotowywać  css responsieive 
   dla urządzeń a także dla naszych aplikacji.
+  
  * Klasa do prawidłowego działania potrzebuje biblioteki browscap.ini
  *  ############# Browser ##################
  * Przykład stylu dla opera np. "-o-linear"
@@ -62,7 +62,8 @@
  * @Site www.joomla-cms.com.pl 
  */ 
  
- /* ##### FACEBOKE ####### ner 2.0
+ /**
+ ##### FACEBOKE ####### ner 2.0
         <meta property="og:site_name" content="Sterownia" />
         <meta property="og:title" content="Slider Aukcji Allegro" />
         <meta property="og:description" content=" Moduł do wyświetlania naszych aukcji allegro" /> 
