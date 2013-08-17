@@ -12,15 +12,15 @@
 
  *  Class for proper operation of the library needs browscap.ini
 
-  * # # # # # # # ###### Browser ##### # # # # # # # # # # # # #
+  *                               Browser 
   * Example of style for opera such as "-o-linear"
   * Example of style for FIREFOX example, "-moz-linear"
   * Example for IE style such as "-ms-linear"
   * Example of style for the W3C as "linear-gradient"
-  * # # # # # # ####### Responsive ##### # # # # # # # # # # # # # # #
+  *                             Responsive
   * Example of style for example 1440px width width: 96%; max-width: 1440px; min-width: 1400px;
   * Example of style for example, 240px width width: 96%; max-width: 240px; min-width: 230px;
-  * # # # # # # ####### Version css ####### # # # # # # # # # # # # #
+  *                              Version css 
   * Example 3 css style for example, box-shadow: 10px 10px 5px # FFFFFF;
   * Example 2 css style for example, font-size-adjust: 0.5;
   * Example CSS style for one such border-left: solid red
@@ -39,15 +39,15 @@
   dla urządzeń a także dla naszych aplikacji.
   
  * Klasa do prawidłowego działania potrzebuje biblioteki browscap.ini
- *  ############# Browser ##################
+ *                        Browser 
  * Przykład stylu dla opera np. "-o-linear"
  * Przykład stylu dla FIREFOX np. "-moz-linear"
  * Przykład stylu dla IE np. "-ms-linear"
  * Przykład stylu dla W3C np. "linear-gradient"
- * ############# Responsive ####################
+ *                        Responsive 
  * Przykład stylu dla width 1440px  np. width: 96%; max-width: 1440px; min-width: 1400px; 
  * Przykład stylu dla width 240px   np. width: 96%; max-width: 240px; min-width: 230px;
- * ############# version css ####################
+ *                         version css 
  * Przykład stylu dla css 3 np. box-shadow: 10px 10px 5px #FFFFFF;
  * Przykład stylu dla css 2 np. font-size-adjust: 0.5;
  * Przykład stylu dla css 1 np. border-left: solid red;
@@ -63,7 +63,7 @@
  */ 
  
  /**
- ##### FACEBOKE ####### ner 2.0
+                                FACEBOKE  ner 2.0
         <meta property="og:site_name" content="Sterownia" />
         <meta property="og:title" content="Slider Aukcji Allegro" />
         <meta property="og:description" content=" Moduł do wyświetlania naszych aukcji allegro" /> 
@@ -73,7 +73,9 @@
   */ 
 class CssResponsive
 {
-    ######################################### Browser ##############################################################################
+    /**
+                                                              Browser 
+    */
     const CSS_IE        = '<link rel="stylesheet" href="../Responsive/css/styll.IE.css" />';// IE, Msie
     const CSS_OPERA     = '<link rel="stylesheet" href="../Responsive/css/styll.Opera.css" />';// OPERA
     const CSS_FIREFOX   = '<link rel="stylesheet" href="../Responsive/css/styll.FIREFOX.css" />';// FIREFOX , MOZILLA
@@ -83,7 +85,7 @@ class CssResponsive
     const CSS_NETSCAPE  = '<link rel="stylesheet" href="../Responsive/css/styll.netscape.css" />';// /* Chrome , Safari */
     const CSS_GECKO     = '<link rel="stylesheet" href="../Responsive/css/styll.Gecko.css" />';// /* Chrome , Safari */     
     const CSS_W3C       = '<link rel="stylesheet" href="../Responsive/css/styll.W3C.css" />';// /* W3C, Gecko, Netscape */
-   ######################################### RESPONSIVE #########################################################################
+                                                  /** RESPONSIVE */
     const CSS_1440 = '<link rel="stylesheet" href="../Responsive/css/styll.1440.css" />';// 1440
     const CSS_1360 = '<link rel="stylesheet" href="../Responsive/css/styll.1360.css" />';// 1360
     const CSS_1280 = '<link rel="stylesheet" href="../Responsive/css/styll.1280.css" />';// 1280
@@ -99,20 +101,19 @@ class CssResponsive
     const CSS_320 = '<link rel="stylesheet" href="../Responsive/css/styll.320.css" />';//   // 320
     const CSS_240 = '<link rel="stylesheet" href="../Responsive/css/styll.240.css" />';//   // 240          
     const CSS_W3C_RE  = '<link rel="stylesheet" href="../Responsive/css/styll.w3c.css" />';// /* W3C */
-    ######################################### Css version ###################################################
+                                         /* Css version */
     const CSS_1  = '<link rel="stylesheet" href="../Responsive/css/css.1.css" />';// /* Css 1 */
     const CSS_2  = '<link rel="stylesheet" href="../Responsive/css/css.2.css" />';// /* Css 2 */
     const CSS_3  = '<link rel="stylesheet" href="../Responsive/css/css.3.css" />';// /* Css 3 */
     const CSS_4  = '<link rel="stylesheet" href="../Responsive/css/css.4.css" />';// /* Css 4 */
     const CSS_5  = '<link rel="stylesheet" href="../Responsive/css/css.5.css" />';// /* Css 5 */
     const CSS_W3C_VER  = '<link rel="stylesheet" href="../Responsive/css/css.w3c_ver.css" />';// /* W3C */
-    ########################################## jQuery & HTML5 IE 9 ##########################################
+                      /* jQuery & HTML5 IE 9 */
     const JQuery    = '<script src="http://code.jquery.com/jquery-1.9.1.js"></script>';// jQuery 1.9
     const JQuery_UI = '<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>';
     const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';// jQuery 
     const HTML_IE   = '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->';
-  #############################################################################################################################  
-    
+ 
     private $css_ie;
     private $css_opera;
     private $css_firefox;
@@ -164,7 +165,7 @@ class CssResponsive
         $this->css_netscape   = self::CSS_NETSCAPE;
         $this->css_gecko      = self::CSS_GECKO;
         $this->w3c            = self::CSS_W3C;// /* W3C */
-        #######################################
+        
         $this->css_1440  = self::CSS_1440;
         $this->css_1360  = self::CSS_1360;
         $this->css_1280  = self::CSS_1280;
@@ -180,14 +181,14 @@ class CssResponsive
         $this->css_320   = self::CSS_320; 
         $this->css_240   = self::CSS_240;
         $this->css_w3c_re  = self::CSS_W3C_RE;// /* W3C */
-        #######################################
+       
         $this->css_1  = self::CSS_1;// /* Css 1 */
         $this->css_2  = self::CSS_2;// /* Css 2 */
         $this->css_3  = self::CSS_3;// /* Css 3 */
         $this->css_4  = self::CSS_4;// /* Css 4 */
         $this->css_5  = self::CSS_5;// /* Css 5 */
         $this->css_w3c_ver  = self::CSS_W3C_VER;// /* W3C */
-        #######################################
+     
         $this->jquery    = self::JQuery;
         $this->jqueryui  = self::JQuery_UI;
         $this->jquerycss = self::JQueryCss;   
@@ -381,9 +382,9 @@ class CssResponsive
                     $this->cookies_height = strip_tags(htmlspecialchars($_COOKIE['height']));
                 }else{
           ?>
-             <script>
-                  var windowWidth  =  screen.width;     ///var windowWidth  = screen.width;     //// var windowWidth  = $(window).width(); //retrieve current window width
-                  var windowHeight =  screen.height;   ///var windowHeight =  screen.height;  ///// var windowHeight = $(window).height(); //retrieve current window height
+<script>
+var windowWidth  =  screen.width;   // window width
+var windowHeight =  screen.height;  // window height
                  ustawCookie("height",windowHeight);
                  ustawCookie("width",windowWidth); 
                  
