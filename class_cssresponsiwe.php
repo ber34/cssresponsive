@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion.
  *  Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc. 
  * Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc.
@@ -62,7 +62,7 @@
  * @Site www.joomla-cms.com.pl 
  */ 
  
- /**
+ /*
                                 FACEBOKE  ner 2.0
         <meta property="og:site_name" content="Sterownia" />
         <meta property="og:title" content="Slider Aukcji Allegro" />
@@ -73,9 +73,7 @@
   */ 
 class CssResponsive
 {
-    /**
-                                                              Browser 
-    */
+                                                    /* Browser */
     const CSS_IE        = '<link rel="stylesheet" href="../Responsive/css/styll.IE.css" />';// IE, Msie
     const CSS_OPERA     = '<link rel="stylesheet" href="../Responsive/css/styll.Opera.css" />';// OPERA
     const CSS_FIREFOX   = '<link rel="stylesheet" href="../Responsive/css/styll.FIREFOX.css" />';// FIREFOX , MOZILLA
@@ -85,7 +83,7 @@ class CssResponsive
     const CSS_NETSCAPE  = '<link rel="stylesheet" href="../Responsive/css/styll.netscape.css" />';// /* Chrome , Safari */
     const CSS_GECKO     = '<link rel="stylesheet" href="../Responsive/css/styll.Gecko.css" />';// /* Chrome , Safari */     
     const CSS_W3C       = '<link rel="stylesheet" href="../Responsive/css/styll.W3C.css" />';// /* W3C, Gecko, Netscape */
-                                                  /** RESPONSIVE */
+                                                  /* RESPONSIVE */
     const CSS_1440 = '<link rel="stylesheet" href="../Responsive/css/styll.1440.css" />';// 1440
     const CSS_1360 = '<link rel="stylesheet" href="../Responsive/css/styll.1360.css" />';// 1360
     const CSS_1280 = '<link rel="stylesheet" href="../Responsive/css/styll.1280.css" />';// 1280
@@ -108,7 +106,7 @@ class CssResponsive
     const CSS_4  = '<link rel="stylesheet" href="../Responsive/css/css.4.css" />';// /* Css 4 */
     const CSS_5  = '<link rel="stylesheet" href="../Responsive/css/css.5.css" />';// /* Css 5 */
     const CSS_W3C_VER  = '<link rel="stylesheet" href="../Responsive/css/css.w3c_ver.css" />';// /* W3C */
-                      /* jQuery & HTML5 IE 9 */
+                                            /* jQuery & HTML5 IE 9 */
     const JQuery    = '<script src="http://code.jquery.com/jquery-1.9.1.js"></script>';// jQuery 1.9
     const JQuery_UI = '<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>';
     const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';// jQuery 
@@ -164,7 +162,7 @@ class CssResponsive
         $this->css_mozilla    = self::CSS_MOZILLA;
         $this->css_netscape   = self::CSS_NETSCAPE;
         $this->css_gecko      = self::CSS_GECKO;
-        $this->w3c            = self::CSS_W3C;// /* W3C */
+        $this->w3c            = self::CSS_W3C; /* W3C */
         
         $this->css_1440  = self::CSS_1440;
         $this->css_1360  = self::CSS_1360;
@@ -180,14 +178,14 @@ class CssResponsive
         $this->css_380   = self::CSS_380; 
         $this->css_320   = self::CSS_320; 
         $this->css_240   = self::CSS_240;
-        $this->css_w3c_re  = self::CSS_W3C_RE;// /* W3C */
+        $this->css_w3c_re  = self::CSS_W3C_RE; /* W3C */
        
-        $this->css_1  = self::CSS_1;// /* Css 1 */
-        $this->css_2  = self::CSS_2;// /* Css 2 */
-        $this->css_3  = self::CSS_3;// /* Css 3 */
-        $this->css_4  = self::CSS_4;// /* Css 4 */
-        $this->css_5  = self::CSS_5;// /* Css 5 */
-        $this->css_w3c_ver  = self::CSS_W3C_VER;// /* W3C */
+        $this->css_1  = self::CSS_1; /* Css 1 */
+        $this->css_2  = self::CSS_2; /* Css 2 */
+        $this->css_3  = self::CSS_3; /* Css 3 */
+        $this->css_4  = self::CSS_4;/* Css 4 */
+        $this->css_5  = self::CSS_5;/* Css 5 */
+        $this->css_w3c_ver  = self::CSS_W3C_VER; /* W3C */
      
         $this->jquery    = self::JQuery;
         $this->jqueryui  = self::JQuery_UI;
