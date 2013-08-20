@@ -1,6 +1,6 @@
 <?php
 /*
- * Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion.
+ * Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion, Open Graph Facebook.
  *  Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc. 
  * Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc.
  *  By reading the right style for your device. Identifies the version of the style supported by your browser. 
@@ -42,11 +42,11 @@
  * Przykład stylu dla css 1 np. border-left: solid red;
  * 
  * 
- * Css_responsive & CssBrowser & CssVersion  & Protocol Open Graph 
+ * Css_responsive & CssBrowser & CssVersion  & Protocol Open Graph Facebook 
  * 
  * PHP 5.1
  * @version 1.50
- * Added support for the Protocol Open Graph 
+ * Added support for the Protocol Open Graph Facebook
  * @license free,  Noncommercial — You may not use this work for commercial purposes. 
  * @author Adam Berger <ber34@o2.pl>
  * @Site www.joomla-cms.com.pl 
