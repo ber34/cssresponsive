@@ -1,7 +1,7 @@
-CssResponsive & CssBrowser & CssVersion & Open Graph Faceboke
+CssResponsive & CssBrowser & CssVersion & Open Graph Facebook
 =============
 
-Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion. 
+Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion, Open Graph Facebook. 
 Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc.
 Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc. 
 By reading the right style for your device. Identifies the version of the style supported by your browser.
@@ -11,9 +11,9 @@ In the classroom you will find a few other things you need to use a web page tha
 Check javascript, cookiesmedia etc. Class will prepare more efficiently css responsieive
 for devices and for our applications.
 Faceboke 
-Added support for the Protocol Open Graph 
+Added support for the Protocol Open Graph Facebook
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,   CssBrowser, CssVersion. 
+Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,   CssBrowser, CssVersion, Open Graph Facebook. 
 Klasa ma za zadanie  wczytywania  odpowiednich styli css w zależności od przeglądarki
 np. Mozilla , IE itd. Klasa ponadto rozpoznaje rozdzielczość ekranu,
 co za tym idzie dostosowuje się do danego urządzenia np. tabletu, 
@@ -26,4 +26,4 @@ które mogą  nam ułatwić pracę. Sprawdzenie obsługi javascript, cookiesmedi
 Klasa pozwoli bardziej wydajniej przygotowywać
 css responsieive dla urządzeń a także dla naszych aplikacji.
 
-Dodano obsługę Protokółu Open Graph Faceboke
+Dodano obsługę Protokółu Open Graph Facebook
