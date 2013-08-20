@@ -234,7 +234,7 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
      public function set_fb_meta_profile($domain_name) { 
       //set_fb_meta_profile Is associated with fb_meta_profile
          ///set_fb_meta_profile Jest powiązany z fb_meta_profile 
-      $this->html ='<meta property="article:author" content="'.$domain_name.'/'.$this->first_name.'-'.$this->last_name.'/" />';
+      return $this->html ='<meta property="article:author" content="'.$domain_name.'/'.$this->first_name.'-'.$this->last_name.'/" />';
      }
      public function fb_meta_audio($audio_url, $audio_title, $audio_artist, $audio_album, $audio_type) {
        $this->html ="";
