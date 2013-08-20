@@ -34,7 +34,7 @@ $audio_artist="Nazwa wykonawcy";
 $audio_album="Tytuł płyty";
 $audio_type ="application/mp3";
 /*
- * FACEBOKE  audio swf
+ * FACEBOKE  video swf
  */
 //$video_url  = "http://domena.pl/film.swf";
 //$video_type = "application/x-shockwave-flash";
@@ -42,7 +42,7 @@ $audio_type ="application/mp3";
  //   or
 
 /*
- * FACEBOKE  audio mp4
+ * FACEBOKE  video mp4
  */
 $video_url  ="http://domena.pl/film.mp4";
 $video_type ="video/mp4"; // type
