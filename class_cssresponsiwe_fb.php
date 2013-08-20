@@ -188,7 +188,6 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
       {
          /*
           * documentation https://developers.facebook.com/docs/opengraph/
-          * http://webhelp.pl/artykuly/facebook-protokol-open-graph/
           * http://ogp.me/#types
                                 FACEBOKE  
   */ 
@@ -232,7 +231,8 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          } 
          return $this->html;
      }
-     public function set_fb_meta_profile($domain_name) { //set_fb_meta_profile Is associated with fb_meta_profile
+     public function set_fb_meta_profile($domain_name) { 
+      //set_fb_meta_profile Is associated with fb_meta_profile
          ///set_fb_meta_profile Jest powiązany z fb_meta_profile 
       $this->html ='<meta property="article:author" content="'.$domain_name.'/'.$this->first_name.'-'.$this->last_name.'/" />';
      }
