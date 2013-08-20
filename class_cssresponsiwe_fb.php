@@ -9,7 +9,8 @@
  * In the classroom you will find a few other things you need to use a web page that may help facilitate the work.
  *  Check javascript, cookiesmedia etc.
  *  Class will prepare more efficiently css responsieive for devices and for our applications.
- * 
+ *
+ *  Added support for the Protocol Open Graph 
  * 
  *  Class for proper operation of the library needs browscap.ini
  * 
@@ -41,10 +42,11 @@
  * Przykład stylu dla css 1 np. border-left: solid red;
  * 
  * 
- * Css_responsive & CssBrowser & CssVersion 
+ * Css_responsive & CssBrowser & CssVersion  & Protocol Open Graph 
  * 
  * PHP 5.1
- * @version 1.00
+ * @version 1.50
+ * Added support for the Protocol Open Graph 
  * @license free,  Noncommercial — You may not use this work for commercial purposes. 
  * @author Adam Berger <ber34@o2.pl>
  * @Site www.joomla-cms.com.pl 
