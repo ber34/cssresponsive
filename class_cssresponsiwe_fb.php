@@ -46,8 +46,8 @@
  * 
  * PHP 5.1
  * @version 1.50
- * Added support for the Protocol Open Graph Facebook
- * @license free,  Noncommercial — You may not use this work for commercial purposes. 
+ * @Added support for the Protocol Open Graph Facebook
+ * @license Apache License, Version 2.0.  
  * @author Adam Berger <ber34@o2.pl>
  * @Site www.joomla-cms.com.pl 
  */ 
