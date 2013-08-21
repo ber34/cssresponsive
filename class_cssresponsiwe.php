@@ -439,73 +439,94 @@ var windowHeight =  screen.height;  // window height
                   $range_height10 = range(241,200); // 240
                   
                   
-            if(in_array($this->cookies_width, $range_width))
+              if(in_array($this->cookies_width, $range_width))
               {
                  $this->responsive=$this->css_1440; // jest re 1440
               }elseif (in_array($this->cookies_width, $range_width1)) {
                   $this->responsive=$this->css_1360; // jest re 1360
               }elseif (in_array($this->cookies_width, $range_width2)) {
-                echo "jest w tabl 1200";
+                  $this->responsive=$this->css_1280;
+                //echo "jest w tabl 1200";
                 if(in_array($this->cookies_height, $range_height5)){
-                    echo "jest w tabl height 1024"; //  window 1200 x 1024
+                    $this->responsive=$this->css_1024;
+                    ///echo "jest w tabl height 1024"; //  window 1200 x 1024
                 }elseif(in_array($this->cookies_height, $range_height4))
                     {
-                    echo "jest w tabl height 960"; //  window 1200 x 960
+                     $this->responsive=$this->css_800;
+                   /// echo "jest w tabl height 960"; //  window 1200 x 960
                     }elseif(in_array($this->cookies_height, $range_height2))
                         {
-                        echo "jest w tabl heigh 600"; //  Kindle landscape 1200 x 768
+                         $this->responsive=$this->css_600;
+                       // echo "jest w tabl heigh 600"; //  Kindle landscape 1200 x 768
                         }else{
                            $this->responsive=$this->css_w3c_re; // Standart W3C
                         }
               }elseif (in_array($this->cookies_width, $range_width3)) {
-                echo "jest w tabl 1100"; // window 1152 x 864
+                 $this->responsive= $this->css_1152;
+                //echo "jest w tabl 1100"; // window 1152 x 864
               }elseif (in_array($this->cookies_width, $range_width4)) {
-                echo "jest w tabl 1020"; // window 1024 x 768
+                     $this->responsive=$this->css_1024;
+                ///echo "jest w tabl 1020"; // window 1024 x 768
                 if(in_array($this->cookies_height, $range_height2))
                     {
-                    echo "jest w tabl height 768"; //  iPad landscape 1024 x 768 & window 1024 x 768
+                    $this->responsive=$this->css_768;
+                    //echo "jest w tabl height 768"; //  iPad landscape 1024 x 768 & window 1024 x 768
                     }elseif(in_array($this->cookies_height, $range_height3))
                         {
-                        echo "jest w tabl heigh 600"; //  Kindle landscape 1024 x 600
+                        $this->responsive=$this->css_600;
+                        ///echo "jest w tabl heigh 600"; //  Kindle landscape 1024 x 600
                         }else{
                             $this->responsive=$this->css_w3c_re; // Standart W3C
                         }
               }elseif (in_array($this->cookies_width, $range_width5)) {
-                echo "jest w tabl 800"; //  window 800 x 600
+                  $this->responsive=$this->css_800;
+               /// echo "jest w tabl 800"; //  window 800 x 600
               }elseif (in_array($this->cookies_width, $range_width6)) {
-                echo "jest w tabl 768"; // iPad portrait 768 x 1024
+                  $this->responsive=$this->css_768;
+                //echo "jest w tabl 768"; // iPad portrait 768 x 1024
               }elseif (in_array($this->cookies_width, $range_width8)) {
-                echo "jest w tabl 685"; // Android (Samsung Galaxy) landscape 685 by 380 
+                  $this->responsive=$this->css_685;
+                ///echo "jest w tabl 685"; // Android (Samsung Galaxy) landscape 685 by 380 
                 if(in_array($this->cookies_height, $range_height2))
                     {
-                    echo "jest w tabl height 380"; //  // Android (Samsung Galaxy) landscape 685 by 380 
+                    $this->responsive=$this->css_380;
+                    ///echo "jest w tabl height 380"; //  // Android (Samsung Galaxy) landscape 685 by 380 
                     }else{
                         $this->responsive=$this->css_w3c_re; // Standart W3C 
                     }
               }elseif (in_array($this->cookies_width, $range_width7)) {
-                echo "jest w tabl 600"; // Kindle portrait 600 x 1024
+                  $this->responsive=$this->css_600;
+                ///echo "jest w tabl 600"; // Kindle portrait 600 x 1024
               }elseif (in_array($this->cookies_width, $range_width9)) {
-                echo "jest w tabl 568";  //iPhone 5 landscape 568 x 320
+                  $this->responsive=$this->css_568;
+                //echo "jest w tabl 568";  //iPhone 5 landscape 568 x 320
               }elseif (in_array($this->cookies_width, $range_width10)) {
-                echo "jest w tabl 480";  // iPhone 3+4 landscape 480 x 320
+                  $this->responsive=$this->css_480;
+               // echo "jest w tabl 480";  // iPhone 3+4 landscape 480 x 320
               }elseif (in_array($this->cookies_width, $range_width13)) {
-                echo "jest w tabl 380";  //  Android (Samsung Galaxy) portrait 380 by 685 
+                  $this->responsive=$this->css_380;
+               // echo "jest w tabl 380";  //  Android (Samsung Galaxy) portrait 380 by 685 
               }elseif (in_array($this->cookies_width, $range_width13)) {
-                echo "jest w tabl 320";  //  iPhone 5 portrait 320 x 568
+                  $this->responsive=$this->css_320;
+                //echo "jest w tabl 320";  //  iPhone 5 portrait 320 x 568
                 if(in_array($this->cookies_height, $range_height7))
                     {
-                    echo "jest w tabl height 568"; // iPhone 5 portrait 320 x 568
+                    $this->responsive=$this->css_568;
+                    ///echo "jest w tabl height 568"; // iPhone 5 portrait 320 x 568
                     }elseif(in_array($this->cookies_height, $range_height8))
                         {
-                        echo "jest w tabl heigh 480"; //  iPhone 3+4 portrait 320 x 480
+                        $this->responsive=$this->css_480;
+                        //echo "jest w tabl heigh 480"; //  iPhone 3+4 portrait 320 x 480
                         }elseif(in_array($this->cookies_height, $range_height10))
                         {
-                        echo "jest w tabl heigh 240"; //  Crappy Android landscape 320 x 240
+                            $this->responsive=$this->css_240;
+                       // echo "jest w tabl heigh 240"; //  Crappy Android landscape 320 x 240
                         }else{
                              $this->responsive=$this->css_w3c_re; // Standart W3C
                         }
               }elseif (in_array($this->cookies_width, $range_width12)) {
-                echo "jest w tabl 240";  // Crappy Android portrait 240 x 320
+                  $this->responsive=$this->css_240;
+                //echo "jest w tabl 240";  // Crappy Android portrait 240 x 320
               }else{
                   $this->responsive=$this->css_w3c_re; // Standart W3C
               }  
