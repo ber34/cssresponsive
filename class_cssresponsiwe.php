@@ -439,7 +439,7 @@ var windowHeight =  screen.height;  // window height
                   $range_height10 = range(241,200); // 240
                   
                   
-              if(in_array($this->cookies_width, $range_width))
+               if(in_array($this->cookies_width, $range_width))
               {
                  $this->responsive=$this->css_1440; // jest re 1440
               }elseif (in_array($this->cookies_width, $range_width1)) {
