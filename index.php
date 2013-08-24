@@ -1,4 +1,16 @@
 <?php
+/*
+* Css_responsive & CssBrowser & CssVersion & Protocol Open Graph Facebook &  framework Bootstrap 
+*
+* PHP 5.1
+* @version 1.0
+* @Added support for the Protocol Open Graph Facebook
+* @Added support for the framework Bootstrap 
+* @license Apache License, Version 2.0.
+* @author Adam Berger <ber34@o2.pl>
+* @Site www.joomla-cms.com.pl
+*/
+
 require_once (dirname(__FILE__) . '/lib/'.basename('class_cssresponsiwe.php'));
 $browser = new CssResponsive();
 /*
