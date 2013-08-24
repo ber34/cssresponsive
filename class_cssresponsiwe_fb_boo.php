@@ -11,6 +11,7 @@
 * Class will prepare more efficiently css responsieive for devices and for our applications.
 *
 * Added support for the Protocol Open Graph
+* Added support for the framework Bootstrap 
 *
 * Class for proper operation of the library needs browscap.ini
 *
@@ -42,11 +43,12 @@
 * Przykład stylu dla css 1 np. border-left: solid red;
 *
 *
-* Css_responsive & CssBrowser & CssVersion & Protocol Open Graph Facebook
+* Css_responsive & CssBrowser & CssVersion & Protocol Open Graph Facebook &  framework Bootstrap 
 *
 * PHP 5.1
-* @version 1.50
+* @version 1.60
 * @Added support for the Protocol Open Graph Facebook
+* @Added support for the framework Bootstrap 
 * @license Apache License, Version 2.0.
 * @author Adam Berger <ber34@o2.pl>
 * @Site www.joomla-cms.com.pl
