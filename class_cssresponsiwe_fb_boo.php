@@ -663,16 +663,4 @@ rezolution height
      }
 }
 
-    Status
-    API
-    Training
-    Shop
-    Blog
-    About
-
-    © 2013 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Contact
 
