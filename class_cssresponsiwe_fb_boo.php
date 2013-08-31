@@ -57,45 +57,45 @@
 class CssResponsive
 {
     ######################################### Browser ##############################################################################
-    const CSS_IE = '<link rel="stylesheet" href="../Responsive/css/styll.IE.css" />';// IE, Msie
-    const CSS_OPERA = '<link rel="stylesheet" href="../Responsive/css/styll.Opera.css" />';// OPERA
-    const CSS_FIREFOX = '<link rel="stylesheet" href="../Responsive/css/styll.FIREFOX.css" />';// FIREFOX , MOZILLA
-    const CSS_SAFARI = '<link rel="stylesheet" href="../Responsive/css/styll.Safari.css" />';// /* Chrome , Safari */
-    const CSS_CHROME = '<link rel="stylesheet" href="../Responsive/css/styll.Chrome.css" />';// /* Chrome , Safari */
-    const CSS_MOZILLA = '<link rel="stylesheet" href="../Responsive/css/styll.MOZILLA.css" />';// FIREFOX , MOZILLA
-    const CSS_NETSCAPE = '<link rel="stylesheet" href="../Responsive/css/styll.netscape.css" />';// /* Chrome , Safari */
-    const CSS_GECKO = '<link rel="stylesheet" href="../Responsive/css/styll.Gecko.css" />';// /* Chrome , Safari */
-    const CSS_W3C = '<link rel="stylesheet" href="../Responsive/css/styll.W3C.css" />';// /* W3C, Gecko, Netscape */
+    const CSS_IE = '<link rel="stylesheet" href="../Responsive/css/styll.IE.css" />';/* IE, Msie
+    const CSS_OPERA = '<link rel="stylesheet" href="../Responsive/css/styll.Opera.css" />';/* OPERA
+    const CSS_FIREFOX = '<link rel="stylesheet" href="../Responsive/css/styll.FIREFOX.css" />';/* FIREFOX , MOZILLA
+    const CSS_SAFARI = '<link rel="stylesheet" href="../Responsive/css/styll.Safari.css" />';/* Chrome , Safari */
+    const CSS_CHROME = '<link rel="stylesheet" href="../Responsive/css/styll.Chrome.css" />';/* Chrome , Safari */
+    const CSS_MOZILLA = '<link rel="stylesheet" href="../Responsive/css/styll.MOZILLA.css" />';/* FIREFOX , MOZILLA
+    const CSS_NETSCAPE = '<link rel="stylesheet" href="../Responsive/css/styll.netscape.css" />'; /* Chrome , Safari */
+    const CSS_GECKO = '<link rel="stylesheet" href="../Responsive/css/styll.Gecko.css" />'; /* Chrome , Safari */
+    const CSS_W3C = '<link rel="stylesheet" href="../Responsive/css/styll.W3C.css" />';/* W3C, Gecko, Netscape */
    ######################################### RESPONSIVE #########################################################################
-    const CSS_1440 = '<link rel="stylesheet" href="../Responsive/css/styll.1440.css" />';// 1440
-    const CSS_1360 = '<link rel="stylesheet" href="../Responsive/css/styll.1360.css" />';// 1360
-    const CSS_1280 = '<link rel="stylesheet" href="../Responsive/css/styll.1280.css" />';// 1280
-    const CSS_1152 = '<link rel="stylesheet" href="../Responsive/css/styll.1152.css" />';// 1152
-    const CSS_1024 = '<link rel="stylesheet" href="../Responsive/css/styll.1024.css" />';// 1024x768
-    const CSS_800 = '<link rel="stylesheet" href="../Responsive/css/styll.800.css" />';// 800
-    const CSS_768 = '<link rel="stylesheet" href="../Responsive/css/styll.768.css" />';// //768
-    const CSS_685 = '<link rel="stylesheet" href="../Responsive/css/styll.685.css" />';// //685
-    const CSS_600 = '<link rel="stylesheet" href="../Responsive/css/styll.600.css" />';// //600
-    const CSS_568 = '<link rel="stylesheet" href="../Responsive/css/styll.568.css" />';// // 568
-    const CSS_480 = '<link rel="stylesheet" href="../Responsive/css/styll.480.css" />';// // 480
-    const CSS_380 = '<link rel="stylesheet" href="../Responsive/css/styll.380.css" />';// // 380
-    const CSS_320 = '<link rel="stylesheet" href="../Responsive/css/styll.320.css" />';// // 320
-    const CSS_240 = '<link rel="stylesheet" href="../Responsive/css/styll.240.css" />';// // 240
-    const CSS_W3C_RE = '<link rel="stylesheet" href="../Responsive/css/styll.w3c.css" />';// /* W3C */
+    const CSS_1440 = '<link rel="stylesheet" href="../Responsive/css/styll.1440.css" />'; /*1440
+    const CSS_1360 = '<link rel="stylesheet" href="../Responsive/css/styll.1360.css" />';/* 1360
+    const CSS_1280 = '<link rel="stylesheet" href="../Responsive/css/styll.1280.css" />'; /*1280
+    const CSS_1152 = '<link rel="stylesheet" href="../Responsive/css/styll.1152.css" />'; /*1152
+    const CSS_1024 = '<link rel="stylesheet" href="../Responsive/css/styll.1024.css" />';/* 1024x768
+    const CSS_800 = '<link rel="stylesheet" href="../Responsive/css/styll.800.css" />'; /*800
+    const CSS_768 = '<link rel="stylesheet" href="../Responsive/css/styll.768.css" />';/*768
+    const CSS_685 = '<link rel="stylesheet" href="../Responsive/css/styll.685.css" />';/*685
+    const CSS_600 = '<link rel="stylesheet" href="../Responsive/css/styll.600.css" />';/*600
+    const CSS_568 = '<link rel="stylesheet" href="../Responsive/css/styll.568.css" />';/*568
+    const CSS_480 = '<link rel="stylesheet" href="../Responsive/css/styll.480.css" />';/*480
+    const CSS_380 = '<link rel="stylesheet" href="../Responsive/css/styll.380.css" />';/*380
+    const CSS_320 = '<link rel="stylesheet" href="../Responsive/css/styll.320.css" />';/* 320
+    const CSS_240 = '<link rel="stylesheet" href="../Responsive/css/styll.240.css" />';/*240
+    const CSS_W3C_RE = '<link rel="stylesheet" href="../Responsive/css/styll.w3c.css" />'; /* W3C */
     ######################################### Css version ###################################################
-    const CSS_1 = '<link rel="stylesheet" href="../Responsive/css/css.1.css" />';// /* Css 1 */
-    const CSS_2 = '<link rel="stylesheet" href="../Responsive/css/css.2.css" />';// /* Css 2 */
-    const CSS_3 = '<link rel="stylesheet" href="../Responsive/css/css.3.css" />';// /* Css 3 */
-    const CSS_4 = '<link rel="stylesheet" href="../Responsive/css/css.4.css" />';// /* Css 4 */
-    const CSS_5 = '<link rel="stylesheet" href="../Responsive/css/css.5.css" />';// /* Css 5 */
-    const CSS_W3C_VER = '<link rel="stylesheet" href="../Responsive/css/css.w3c_ver.css" />';// /* W3C */
+    const CSS_1 = '<link rel="stylesheet" href="../Responsive/css/css.1.css" />'; /* Css 1 */
+    const CSS_2 = '<link rel="stylesheet" href="../Responsive/css/css.2.css" />';/* Css 2 */
+    const CSS_3 = '<link rel="stylesheet" href="../Responsive/css/css.3.css" />';/* Css 3 */
+    const CSS_4 = '<link rel="stylesheet" href="../Responsive/css/css.4.css" />'; /* Css 4 */
+    const CSS_5 = '<link rel="stylesheet" href="../Responsive/css/css.5.css" />'; /* Css 5 */
+    const CSS_W3C_VER = '<link rel="stylesheet" href="../Responsive/css/css.w3c_ver.css" />'; /* W3C */
     ########################################## jQuery & HTML5 IE 9 ##########################################
-    const JQuery = '<script src="http://code.jquery.com/jquery-1.9.1.js"></script>';// jQuery 1.9
+    const JQuery = '<script src="http://code.jquery.com/jquery-1.9.1.js"></script>';/* jQuery 1.9
     const JQuery_UI = '<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>';
-    const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';// jQuery
+    const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';/* jQuery
     const BootstrapCss = '<link rel="stylesheet" href="../zarabiarka/css/bootstrap.css" />';// Bootstrap 
-    const BootstrapCssResponsive = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap-responsive.css" />';// Bootstrap css responsive
-    const BootstrapJavascript = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap.js" />';// Bootstrap javascript
+    const BootstrapCssResponsive = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap-responsive.css" />';/* Bootstrap css responsive
+    const BootstrapJavascript = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap.js" />';/*Bootstrap javascript
     const HTML_IE = '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->';
   #############################################################################################################################
     
@@ -141,9 +141,9 @@ class CssResponsive
     public $first_name;
     public $last_name;
     public $typebrowser;
-    public $responsive= [ ]; //tablica;
-    private $browser = [ ]; //tablica
-    private $key = [ ]; //tablica
+    public $responsive= [ ]; /*tablica;
+    private $browser = [ ]; /*tablica
+    private $key = [ ]; /*tablica
    
     public function __construct()
      {
@@ -155,7 +155,7 @@ class CssResponsive
         $this->css_mozilla = self::CSS_MOZILLA;
         $this->css_netscape = self::CSS_NETSCAPE;
         $this->css_gecko = self::CSS_GECKO;
-        $this->w3c = self::CSS_W3C;// /* W3C */
+        $this->w3c = self::CSS_W3C; /* W3C */
         #######################################
         $this->css_1440 = self::CSS_1440;
         $this->css_1360 = self::CSS_1360;
@@ -171,14 +171,14 @@ class CssResponsive
         $this->css_380 = self::CSS_380;
         $this->css_320 = self::CSS_320;
         $this->css_240 = self::CSS_240;
-        $this->css_w3c_re = self::CSS_W3C_RE;// /* W3C */
+        $this->css_w3c_re = self::CSS_W3C_RE; /* W3C */
         #######################################
-        $this->css_1 = self::CSS_1;// /* Css 1 */
-        $this->css_2 = self::CSS_2;// /* Css 2 */
-        $this->css_3 = self::CSS_3;// /* Css 3 */
-        $this->css_4 = self::CSS_4;// /* Css 4 */
-        $this->css_5 = self::CSS_5;// /* Css 5 */
-        $this->css_w3c_ver = self::CSS_W3C_VER;// /* W3C */
+        $this->css_1 = self::CSS_1; /* Css 1 */
+        $this->css_2 = self::CSS_2; /* Css 2 */
+        $this->css_3 = self::CSS_3; /* Css 3 */
+        $this->css_4 = self::CSS_4; /* Css 4 */
+        $this->css_5 = self::CSS_5; /* Css 5 */
+        $this->css_w3c_ver = self::CSS_W3C_VER; /* W3C */
         #######################################
         $this->jquery = self::JQuery;
         $this->jqueryui = self::JQuery_UI;
@@ -198,28 +198,28 @@ class CssResponsive
 public function fb_meta_site($site_name, $title, $description=null, $content_type, $url=null, $image=null)
       {
          /*
-* documentation https://developers.facebook.com/docs/opengraph/
-* http://ogp.me/#types
-FACEBOKE
-*/
+          * documentation https://developers.facebook.com/docs/opengraph/
+          * http://ogp.me/#types
+          * FACEBOKE
+         */
          $this->html ="";
          if(!empty($site_name)){
-         $this->html .='<meta property="og:site_name" content="'.$site_name.'" />'; // Nazwa strony
+         $this->html .='<meta property="og:site_name" content="'.$site_name.'" />'; /* Nazwa strony
          }
          if(!empty($title)){
-         $this->html .='<meta property="og:title" content="'.$title.'" />'; // tytuł linka
+         $this->html .='<meta property="og:title" content="'.$title.'" />'; /* tytuł linka
          }
          if(!empty($description)){
-         $this->html .='<meta property="og:description" content="'.$description.'" /> '; // Opis treści
+         $this->html .='<meta property="og:description" content="'.$description.'" /> '; /* Opis treści
          }
          if(!empty($content_type)){
           $this->html .='<meta property="og:type" content="'.$content_type.'" />';
          }
          if(!empty($url)){
-         $this->html .='<meta property="og:url" content="'.$url.'" />';/// link url
+         $this->html .='<meta property="og:url" content="'.$url.'" />';/* link url
          }
          if(!empty($image)){
-         $this->html .='<meta property="og:image" content="'.$image.'" />'; // link zdiecie
+         $this->html .='<meta property="og:image" content="'.$image.'" />'; /* link zdiecie
          }
        return $this->html;
      }
@@ -228,17 +228,17 @@ FACEBOKE
          $this->html ="";
         if(!empty($first_name)){
          $this->first_name=$first_name;
-         $this->html .='<meta property="profile:first_name" content="'.$this->first_name.'" />'; // imie autora
+         $this->html .='<meta property="profile:first_name" content="'.$this->first_name.'" />'; /* imie autora
          }
         if(!empty($last_name)){
          $this->last_name =$last_name;
-         $this->html .='<meta property="profile:last_name" content="'.$this->last_name.'" />'; // Nazwisko autora
+         $this->html .='<meta property="profile:last_name" content="'.$this->last_name.'" />'; /* Nazwisko autora
          }
         if(!empty($username)){
-         $this->html .='<meta property="profile:username" content="'.$username.'" />'; // NICK autora
+         $this->html .='<meta property="profile:username" content="'.$username.'" />'; /* NICK autora
          }
         if(!empty($gender)){
-         $this->html .='<meta property="profile:gender" content="'.$gender.'" />'; // płeć autora male "mężczyzna" female "kobieta"
+         $this->html .='<meta property="profile:gender" content="'.$gender.'" />'; /* płeć autora male "mężczyzna" female "kobieta"
          }
          return $this->html;
      }
@@ -250,35 +250,35 @@ FACEBOKE
      public function fb_meta_audio($audio_url, $audio_title, $audio_artist, $audio_album, $audio_type) {
        $this->html ="";
        if(!empty($audio_title)){
-         $this->html .='<meta property="og:audio:title" content="'.$audio_title.'" />'; // Tytuł piosenki
+         $this->html .='<meta property="og:audio:title" content="'.$audio_title.'" />'; /* Tytuł piosenki
          }
        if(!empty($audio_artist)){
-         $this->html .='<meta property="og:audio:artist" content="'.$audio_artist.'" />'; // Nazwa wykonawcy lub zespołu
+         $this->html .='<meta property="og:audio:artist" content="'.$audio_artist.'" />'; /* Nazwa wykonawcy lub zespołu
          }
        if(!empty($audio_album)){
-         $this->html .='<meta property="og:audio:album" content="'.$audio_album.'" />'; // Tytuł płyty
+         $this->html .='<meta property="og:audio:album" content="'.$audio_album.'" />'; /* Tytuł płyty
          }
        if(!empty($audio_type)){
-         $this->html .='<meta property="og:audio:type" content="'.$audio_type.'" />'; // application type np. mp3
+         $this->html .='<meta property="og:audio:type" content="'.$audio_type.'" />'; /* application type np. mp3
          }
        if(!empty($audio_url)){
-         $this->html .='<meta property="og:audio" content="'.$audio_url.'" />'; // adres utworu track address
+         $this->html .='<meta property="og:audio" content="'.$audio_url.'" />';  /* adres utworu track address
          }
          return $this->html;
      }
    public function fb_meta_video($video_url, $video_type, $video_height=null, $video_width=null) {
       $this->html ="";
        if(!empty($video_url)){
-         $this->html .='<meta property="og:video" content="'.$video_url.'" />'; // adres utworu track address
+         $this->html .='<meta property="og:video" content="'.$video_url.'" />'; /* adres utworu track address
          }
           if(!empty($video_height)){
-         $this->html .='<meta property="og:video:height" content="'.$video_height.'" />'; // Wymiary Dimensions height 640
+         $this->html .='<meta property="og:video:height" content="'.$video_height.'" />'; /* Wymiary Dimensions height 640
           }
           if(!empty($video_width)){
-         $this->html .='<meta property="og:video:width" content="'.$video_width.'" />'; // Wymiary Dimensions width 360
+         $this->html .='<meta property="og:video:width" content="'.$video_width.'" />'; /* Wymiary Dimensions width 360
           }
        if(!empty($video_type)){
-         $this->html .='<meta property="og:video:type" content="'.$video_type.'" />'; // application type np. mp4
+         $this->html .='<meta property="og:video:type" content="'.$video_type.'" />'; /* application type np. mp4
          }
          return $this->html;
      }
