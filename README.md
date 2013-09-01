@@ -1,4 +1,6 @@
 CssResponsive & CssBrowser & CssVersion & Open Graph Facebook & framework Bootstrap
+<script src="http://www.phpclasses.org/browse/package/8193/format/badge.js">
+</script>
 =============
 
 Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion, Open Graph Facebook. 
