@@ -111,9 +111,9 @@ class CssResponsive
     public $jquery;
     public $jquerycss;
     public $jqueryui;
-    public  $bootstrap_css;
-    public  $BootstrapCssResponsive;
-    public  $bootstrapjavascript;
+    public $bootstrap_css;
+    public $BootstrapCssResponsive;
+    public $bootstrapjavascript;
     public $htmlie;
     public $css_1440;
     public $css_1360;
@@ -145,8 +145,8 @@ class CssResponsive
     private $browser = [ ]; /*tablica*/
     private $key = [ ]; /*tablica*/
    
-    public function __construct()
-     {
+    public function __construct(){
+     
         $this->css_ie = self::CSS_IE;
         $this->css_opera = self::CSS_OPERA;
         $this->css_firefox = self::CSS_FIREFOX;
@@ -188,15 +188,15 @@ class CssResponsive
         $this->bootstrapjavascript   = self::BootstrapJavascript;
         $this->htmlie = self::HTML_IE;
      }
-    public function browser_all()
-     {
+    public function browser_all(){
+     
            $this->browser[] = get_browser($_SERVER['HTTP_USER_AGENT']);
            foreach ($this->browser as $this->key) {
                return $this->key;
            }
      }
-public function fb_meta_site($site_name, $title, $description=null, $content_type, $url=null, $image=null)
-      {
+public function fb_meta_site($site_name, $title, $description=null, $content_type, $url=null, $image=null){
+ 
          /*
           * documentation https://developers.facebook.com/docs/opengraph/
           * http://ogp.me/#types
@@ -223,7 +223,7 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          }
        return $this->html;
      }
-     public function fb_meta_profile($first_name, $last_name, $username=null, $gender=null) {
+     public function fb_meta_profile($first_name, $last_name, $username=null, $gender=null){
          
          $this->html ="";
         if(!empty($first_name)){
@@ -242,7 +242,7 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          }
          return $this->html;
      }
-     public function set_fb_meta_profile($domain_name) {
+     public function set_fb_meta_profile($domain_name){
       /*set_fb_meta_profile Is associated with fb_meta_profile*/
          /*set_fb_meta_profile Jest powiązany z fb_meta_profile*/
       return $this->html ='<meta property="article:author" content="'.$domain_name.'/'.$this->first_name.'-'.$this->last_name.'/" />';
@@ -266,7 +266,7 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          }
          return $this->html;
      }
-   public function fb_meta_video($video_url, $video_type, $video_height=null, $video_width=null) {
+   public function fb_meta_video($video_url, $video_type, $video_height=null, $video_width=null){
       $this->html ="";
        if(!empty($video_url)){
          $this->html .='<meta property="og:video" content="'.$video_url.'" />'; /* adres utworu track address*/
@@ -301,87 +301,76 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          }
           return $this->html;
      }
-    public function javascript()
-     {
+    public function javascript(){
        if($this->browser_all()->{'javascript'} == 1){ /* This browser supports javascript*/
           return true; /* ta przeglądarka obsługuje javascript*/
        }else{
          return false;/* nie obsługuje*/
        }
      }
-     public function cookies()
-     {
+     public function cookies(){
        if($this->browser_all()->{'cookies'} == 1){   /*  This browser supports cookies*/
           return true; /* ta przeglądarka obsługuje cookies*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
-      public function backgroundsounds()
-     {
+      public function backgroundsounds(){
        if($this->browser_all()->{'backgroundsounds'} == 1){    /*  This browser supports backgroundsounds*/
           return true; /* ta przeglądarka obsługuje backgroundsounds*/
        }else{
          return false;  /* nie obsługuje*/
        }
      }
-      public function iframes()
-     {
+      public function iframes(){
        if($this->browser_all()->{'iframes'} == 1){ /* This browser supports iframes*/
           return true; /* ta przeglądarka obsługuje iframes*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
-      public function Bootstrap_css()
-     {
+      public function Bootstrap_css(){
        if(!empty($this->bootstrap_css)){    
           return $this->bootstrap_css; /* bootstrap css*/
        }else{
          return false; /* nie obsługuje*/
        } 
      }
-    public function Bootstrap_css_responsive()
-     {
+    public function Bootstrap_css_responsive(){
        if(!empty($this->BootstrapCssResponsive)){    
           return $this->BootstrapCssResponsive;  /* bootstrap css*/
        }else{
          return false; /* nie obsługuje*/
        } 
      }
-    public function Bootstrap_javascript()
-     {
+    public function Bootstrap_javascript(){
        if(!empty($this->bootstrapjavascript)){    
           return $this->bootstrapjavascript; /* bootstrap javascript*/
        }else{
          return false; /* nie obsługuje*/
        } 
      }
-     public function HtmlIE()
-     {
+     public function HtmlIE(){
        if(!empty($this->htmlie)){ /* This browser supports html5-IE 9*/
           return $this->htmlie;  /* ta przeglądarka obsługuje html5-IE9*/
        }else{
          return false;  /* nie obsługuje*/
        }
      }
-     public function platform()
-     {
+     public function platform(){
        if(!empty($this->browser_all()->{'platform'})){   /* This browser supports javascript*/
           return $this->browser_all()->{'platform'}; /* ta przeglądarka obsługuje javascript*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
-     public function browser()
-     {
+     public function browser(){
        if(!empty($this->browser_all()->{'browser'})){
            
            $browsers = array("Firefox", "Msie", "Opera", "Chrome", "Safari",
                             "Mozilla", "Netscape",
                             "Gecko", "IE");
-             if(in_array($this->browser_all()->{'browser'}, $browsers))
-              {
+             if(in_array($this->browser_all()->{'browser'}, $browsers)){
                    return $this->typebrowser = $this->browser_all()->{'browser'}; /*type of browser rodzaj przeglądarki*/
               }else{
                    return $this->typebrowser= "Firefox"; /*  type of browser rodzaj przeglądarki*/
@@ -391,9 +380,8 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
        }
      }
    
-   public function cssversionbrowser()
-    {
-     switch ($this->browser()) {
+   public function cssversionbrowser(){
+     switch ($this->browser()){
         
         case "Firefox":
           return $this->css_firefox;
@@ -427,33 +415,29 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
            break;
                }
      }
-     public function jQueryCss()
-     {
-         if(!empty($this->jquerycss)){
+     public function jQueryCss(){
+       if(!empty($this->jquerycss)){
           return $this->jquerycss;  /* jquery*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
      
-    public function jQuery()
-     {
-         if(!empty($this->jquery)){
+    public function jQuery(){
+       if(!empty($this->jquery)){
           return $this->jquery; /* jquery*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
-     public function jQuery_UI()
-     {
-         if(!empty($this->jqueryui)){
+     public function jQuery_UI(){
+       if(!empty($this->jqueryui)){
           return $this->jqueryui; /* jquery*/
        }else{
          return false; /* nie obsługuje*/
        }
      }
-    public function cssversion()
-     {
+    public function cssversion(){
       if(!empty($this->browser_all()->{'cssversion'})){
            $this->css = $this->browser_all()->{'cssversion'};
           return $this->css; /* version css*/
@@ -461,8 +445,7 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
          return false; /* nie obsługuje*/
        }
      }
-    public function css()
-     {
+    public function css(){
        
       switch ($this->cssversion()) {
         case "1":
@@ -496,12 +479,9 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
    */
   public $time_cookies = 15;
   
-    public function save_cookies()
-     {
-          if($this->cookies())
-           {
-             if(!empty($_COOKIE['width']))
-                {
+    public function save_cookies(){
+          if($this->cookies()){
+             if(!empty($_COOKIE['width'])){
                     $this->cookies_width = strip_tags(htmlspecialchars($_COOKIE['width']));
                     $this->cookies_height = strip_tags(htmlspecialchars($_COOKIE['height']));
                 }else{
@@ -527,10 +507,10 @@ window.location.reload();
                $this->cookies_width ="";
            }
      }
-     public function get_responsive()
-     {
-         if($this->javascript() && !empty($this->cookies_width)) /* sprawdzenie czy przeglądarka obsługuje javascript*/
-             {
+     
+  public function get_responsive(){
+         if($this->javascript() && !empty($this->cookies_width)){ /* sprawdzenie czy przeglądarka obsługuje javascript*/
+
               /*
          rezolution width
                */
@@ -564,8 +544,7 @@ window.location.reload();
                   $range_height10 = range(241,200); /* 240*/
                   
                   
-            if(in_array($this->cookies_width, $range_width))
-              {
+            if(in_array($this->cookies_width, $range_width)){
                  $this->responsive=$this->css_1440;  /* jest re 1440*/
               }elseif (in_array($this->cookies_width, $range_width1)) {
                   $this->responsive=$this->css_1360; /* jest re 1360*/
@@ -575,81 +554,73 @@ window.location.reload();
                 if(in_array($this->cookies_height, $range_height5)){
                     $this->responsive=$this->css_1024;
                     /* echo "jest w tabl height 1024";  window 1200 x 1024*/
-                }elseif(in_array($this->cookies_height, $range_height4))
-                    {
+                }elseif(in_array($this->cookies_height, $range_height4)){
                      $this->responsive=$this->css_800;
                     /* echo "jest w tabl height 960";  window 1200 x 960*/
-                    }elseif(in_array($this->cookies_height, $range_height2))
-                        {
+                    }elseif(in_array($this->cookies_height, $range_height2)){
                          $this->responsive=$this->css_600;
                        /* echo "jest w tabl heigh 600";  Kindle landscape 1200 x 768*/
                         }else{
                            $this->responsive=$this->css_w3c_re; /* Standart W3C*/
                         }
-              }elseif (in_array($this->cookies_width, $range_width3)) {
+              }elseif (in_array($this->cookies_width, $range_width3)){
                  $this->responsive= $this->css_1152;
               /*  echo "jest w tabl 1100";  window 1152 x 864*/
-              }elseif (in_array($this->cookies_width, $range_width4)) {
+              }elseif (in_array($this->cookies_width, $range_width4)){
                      $this->responsive=$this->css_1024;
                 /* echo "jest w tabl 1020";  window 1024 x 768*/
-                if(in_array($this->cookies_height, $range_height2))
-                    {
+                if(in_array($this->cookies_height, $range_height2)){
                     $this->responsive=$this->css_768;
                     /* echo "jest w tabl height 768";  iPad landscape 1024 x 768 & window 1024 x 768*/
-                    }elseif(in_array($this->cookies_height, $range_height3))
-                        {
+                    }elseif(in_array($this->cookies_height, $range_height3)){
                         $this->responsive=$this->css_600;
                         /* echo "jest w tabl heigh 600";  Kindle landscape 1024 x 600*/
                         }else{
                             $this->responsive=$this->css_w3c_re; /* Standart W3C*/
                         }
-              }elseif (in_array($this->cookies_width, $range_width5)) {
+              }elseif (in_array($this->cookies_width, $range_width5)){
                   $this->responsive=$this->css_800;
                /* echo "jest w tabl 800";  window 800 x 600*/
-              }elseif (in_array($this->cookies_width, $range_width6)) {
+              }elseif (in_array($this->cookies_width, $range_width6)){
                   $this->responsive=$this->css_768;
                 /* echo "jest w tabl 768";  iPad portrait 768 x 1024*/
-              }elseif (in_array($this->cookies_width, $range_width8)) {
+              }elseif (in_array($this->cookies_width, $range_width8)){
                   $this->responsive=$this->css_685;
                 /* echo "jest w tabl 685";  Android (Samsung Galaxy) landscape 685 by 380*/
-                if(in_array($this->cookies_height, $range_height2))
-                    {
+                if(in_array($this->cookies_height, $range_height2)){
                     $this->responsive=$this->css_380;
                     /* echo "jest w tabl height 380";  Android (Samsung Galaxy) landscape 685 by 380*/
                     }else{
                         $this->responsive=$this->css_w3c_re; /* Standart W3C*/
                     }
-              }elseif (in_array($this->cookies_width, $range_width7)) {
+              }elseif (in_array($this->cookies_width, $range_width7)){
                   $this->responsive=$this->css_600;
                 /* echo "jest w tabl 600"; Kindle portrait 600 x 1024*/
-              }elseif (in_array($this->cookies_width, $range_width9)) {
+              }elseif (in_array($this->cookies_width, $range_width9)){
                   $this->responsive=$this->css_568;
                 /* echo "jest w tabl 568"; iPhone 5 landscape 568 x 320*/
-              }elseif (in_array($this->cookies_width, $range_width10)) {
+              }elseif (in_array($this->cookies_width, $range_width10)){
                   $this->responsive=$this->css_480;
                /* echo "jest w tabl 480";  iPhone 3+4 landscape 480 x 320*/
-              }elseif (in_array($this->cookies_width, $range_width13)) {
+              }elseif (in_array($this->cookies_width, $range_width13)){
                   $this->responsive=$this->css_380;
                /* echo "jest w tabl 380";  Android (Samsung Galaxy) portrait 380 by 685*/
-              }elseif (in_array($this->cookies_width, $range_width13)) {
+              }elseif (in_array($this->cookies_width, $range_width13)){
                   $this->responsive=$this->css_320;
                 /* echo "jest w tabl 320"; iPhone 5 portrait 320 x 568*/
-                if(in_array($this->cookies_height, $range_height7))
-                    {
+                if(in_array($this->cookies_height, $range_height7)){
                     $this->responsive=$this->css_568;
                    /* echo "jest w tabl height 568";  iPhone 5 portrait 320 x 568*/
-                    }elseif(in_array($this->cookies_height, $range_height8))
-                        {
+                    }elseif(in_array($this->cookies_height, $range_height8)){
                         $this->responsive=$this->css_480;
                         /* echo "jest w tabl heigh 480";  iPhone 3+4 portrait 320 x 480*/
-                        }elseif(in_array($this->cookies_height, $range_height10))
-                        {
+                        }elseif(in_array($this->cookies_height, $range_height10)){
                             $this->responsive=$this->css_240;
                        /* echo "jest w tabl heigh 240";  Crappy Android landscape 320 x 240*/
                         }else{
                              $this->responsive=$this->css_w3c_re; /* Standart W3C*/
                         }
-              }elseif (in_array($this->cookies_width, $range_width12)) {
+              }elseif (in_array($this->cookies_width, $range_width12)){
                   $this->responsive=$this->css_240;
                 /* echo "jest w tabl 240";  Crappy Android portrait 240 x 320*/
               }else{
