@@ -109,8 +109,79 @@ class CssResponsive
     const BootstrapCssResponsive = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap-responsive.css" />';/* Bootstrap css responsive*/
     const BootstrapJavascript = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap.js" />';/*Bootstrap javascript*/
     const HTML_IE = '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->';
-  #############################################################################################################################
-    
+     #######################################  Font Google ########################################### 
+        /*
+         * http://www.google.com/fonts
+         * Font Kavoon
+         *  time 0.17
+         * css font-family: 'Kavoon', cursive;
+         */
+   const Font_Kavoon = "<link href='http://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet' type='text/css'>"; 
+         /*
+         * http://www.google.com/fonts
+         * Font Hanalei
+         * time 0.18
+         * css font-family: 'Hanalei Fill', cursive; 
+         */
+  const Font_Hanalei ="<link href='http://fonts.googleapis.com/css?family=Hanalei+Fill' rel='stylesheet' type='text/css'>"; 
+        /*
+         * http://www.google.com/fonts
+         * Font Mouse
+         * time 0.15
+         * css font-family: 'Mouse Memoirs', sans-serif; 
+         */
+  const Font_Mouse ="<link href='http://fonts.googleapis.com/css?family=Mouse+Memoirs' rel='stylesheet' type='text/css'>";  
+        /*
+         * http://www.google.com/fonts
+         * Font Roboto
+         * time 0.10
+         * css font-family: 'Roboto', sans-serif; 
+         */
+  const Font_Roboto ="<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font Flavors
+         * time 0.97
+         * css font-family: 'Flavors', cursive; 
+         */
+  const Font_Flavors ="<link href='http://fonts.googleapis.com/css?family=Flavors' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font Glass
+         * time 0.13
+         * css font-family: 'Glass Antiqua', cursive; 
+         */
+  const Font_Glass ="<link href='http://fonts.googleapis.com/css?family=Glass+Antiqua' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font Maiden
+         * time 0.32
+         * css font-family: 'Maiden Orange', cursive;
+         */
+  const Font_Maiden ="<link href='http://fonts.googleapis.com/css?family=Maiden+Orange' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font Rosario
+         * time 0.18
+         * css font-family: 'Rosario', sans-serif;
+         */
+  const Font_Rosario="<link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font UnifrakturMaguntia
+         * time 0.44
+         * css font-family: 'UnifrakturMaguntia', cursive;
+         */
+  const Font_UnifrakturMaguntia ="<link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>";
+        /*
+         * http://www.google.com/fonts
+         * Font Rancho
+         * time 0.26
+         * css font-family: 'Rancho', cursive;
+         */
+  const Font_Rancho ="<link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>";
+  
+  ###########################################################################################
     private $css_ie;
     private $css_opera;
     private $css_firefox;
@@ -156,6 +227,16 @@ class CssResponsive
     public $responsive= [ ]; /*tablica*/
     private $browser = [ ]; /*tablica*/
     private $key = [ ]; /*tablica*/
+    private $Rancho;
+    private $UnifrakturMaguntia;
+    private $Rosario;
+    private $Maiden;
+    private $Glass;
+    private $Flavors;
+    private $Roboto;
+    private $Mouse;
+    private $Hanalei; 
+    private $Kavoon; 
    
     public function __construct(){
      
@@ -199,6 +280,17 @@ class CssResponsive
         $this->BootstrapCssResponsive = self::BootstrapCss;
         $this->bootstrapjavascript = self::BootstrapJavascript;
         $this->htmlie = self::HTML_IE;
+        ################# Font  ######################
+        $this->Rancho                 = self::Font_Rancho;
+        $this->UnifrakturMaguntia     = self::Font_UnifrakturMaguntia;
+        $this->Rosario                = self::Font_Rosario;
+        $this->Maiden                 = self::Font_Maiden;
+        $this->Glass                  = self::Font_Glass;
+        $this->Flavors                = self::Font_Flavors;
+        $this->Roboto                 = self::Font_Roboto;
+        $this->Mouse                  = self::Font_Mouse;
+        $this->Hanalei                = self::Font_Hanalei; 
+        $this->Kavoon                 = self::Font_Kavoon;
      }
     public function browser_all(){
      
@@ -424,6 +516,44 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
            break;
        default:
            return $this->w3c; /* nie obsługuje*/
+           break;
+               }
+     }
+   public function fontgoogle($font_info)
+    {
+     switch ($font_info) {  
+        case "Rancho":
+          return $this->Rancho;
+          break;
+        case "UnifrakturMaguntia":
+          return $this->UnifrakturMaguntia;
+           break;
+         case "Rosario":
+          return $this->Rosario;
+           break;
+         case "Maiden":
+          return $this->Maiden;
+          break;
+        case "Glass":
+           return $this->Glass;
+           break;
+         case "Flavors":
+          return $this->Flavors;
+           break;
+        case "Roboto":
+          return $this->Roboto;
+          break;
+        case "Mouse":
+          return $this->Mouse;
+           break;
+         case "Hanalei":
+            return $this->Hanalei;
+           break;
+         case "Kavoon":
+            return $this->Kavoon;
+           break;
+       default:
+           return $this->Roboto;
            break;
                }
      }
