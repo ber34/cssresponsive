@@ -1,4 +1,4 @@
-CssResponsive & CssBrowser & CssVersion & Open Graph Facebook & framework Bootstrap
+CssResponsive & CssBrowser & CssVersion & Open Graph Facebook & framework Bootstrap & Font Google
 
 =============
 
@@ -14,6 +14,9 @@ for devices and for our applications.
 Faceboke 
 Added support for the Protocol Open Graph Facebook
 Added support for the framework Bootstrap
+The class made ​​every google font support. 
+Now in an easy way that you can make the font on the page. 
+You get to choose from 10 pieces
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,   CssBrowser, CssVersion, Open Graph Facebook. 
 Klasa ma za zadanie  wczytywania  odpowiednich styli css w zależności od przeglądarki
@@ -30,3 +33,7 @@ css responsieive dla urządzeń a także dla naszych aplikacji.
 
 Dodano obsługę Protokółu Open Graph Facebook
 Dodano obsługę framework Bootstrap
+ Do klasy dołożono obsługę czcionek firmy google.
+ Teraz w łatwy sposób możesz dołożyć
+ interesujące cię czcionki do strony.
+ Do wyboru dostajemy 10 szt. 
