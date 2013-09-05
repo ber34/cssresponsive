@@ -1,58 +1,70 @@
 <?php
+
 /*
-* Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion, Open Graph Facebook.
-* Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc.
-* Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc.
-* By reading the right style for your device. Identifies the version of the style supported by your browser.
-* All this results in a significant acceleration loading, because they are charged only the styles
-* that are just at the time needed.
-* In the classroom you will find a few other things you need to use a web page that may help facilitate the work.
-* Check javascript, cookiesmedia etc.
-* Class will prepare more efficiently css responsieive for devices and for our applications.
-*
-* Added support for the Protocol Open Graph
-* Added support for the framework Bootstrap
-*
-* Class for proper operation of the library needs browscap.ini
-*
-* # # # # # # # ###### Browser ##### # # # # # # # # # # # # #
-* Example of style for opera such as "-o-linear"
-* Example of style for FIREFOX example, "-moz-linear"
-* Example for IE style such as "-ms-linear"
-* Example of style for the W3C as "linear-gradient"
-* # # # # # # ####### Responsive ##### # # # # # # # # # # # # # # #
-* Example of style for example 1440px width width: 96%; max-width: 1440px; min-width: 1400px;
-* Example of style for example, 240px width width: 96%; max-width: 240px; min-width: 230px;
-* # # # # # # ####### Version css ####### # # # # # # # # # # # # #
-* Example 3 css style for example, box-shadow: 10px 10px 5px # FFFFFF;
-* Example 2 css style for example, font-size-adjust: 0.5;
-* Example CSS style for one such border-left: solid red
-*
-* Klasa do prawidłowego działania potrzebuje biblioteki browscap.ini
-* ############# Browser ##################
-* Przykład stylu dla opera np. "-o-linear"
-* Przykład stylu dla FIREFOX np. "-moz-linear"
-* Przykład stylu dla IE np. "-ms-linear"
-* Przykład stylu dla W3C np. "linear-gradient"
-* ############# Responsive ####################
-* Przykład stylu dla width 1440px np. width: 96%; max-width: 1440px; min-width: 1400px;
-* Przykład stylu dla width 240px np. width: 96%; max-width: 240px; min-width: 230px;
-* ############# version css ####################
-* Przykład stylu dla css 3 np. box-shadow: 10px 10px 5px #FFFFFF;
-* Przykład stylu dla css 2 np. font-size-adjust: 0.5;
-* Przykład stylu dla css 1 np. border-left: solid red;
-*
-*
-* Css_responsive & CssBrowser & CssVersion & Protocol Open Graph Facebook & framework Bootstrap
-*
-* PHP 5.1
-* @version 1.60
-* @Added support for the Protocol Open Graph Facebook
-* @Added support for the framework Bootstrap
-* @license Apache License, Version 2.0.
-* @author Adam Berger <ber34@o2.pl>
-* @Site www.joomla-cms.com.pl
-*/
+ * Responsive CSS is a class to handle pages html5, jQuery, CssResponsive, CssBrowser, CssVersion, Open Graph Facebook.
+ *  Class is designed to load the appropriate CSS styles depending on the browser like Mozilla, IE, etc. 
+ * Class also recognize the screen resolution, thus adapting to a device such as tablet, phone, etc.
+ *  By reading the right style for your device. Identifies the version of the style supported by your browser. 
+ * All this results in a significant acceleration loading, because they are charged only the styles
+ *  that are just at the time needed. 
+ * In the classroom you will find a few other things you need to use a web page that may help facilitate the work.
+ *  Check javascript, cookiesmedia etc.
+ *  Class will prepare more efficiently css responsieive for devices and for our applications.
+ * 
+ * Added support for the Protocol Open Graph Facebook
+ * Added support for the framework Bootstrap
+ * 
+ * The class made ​​every google font support. 
+ * Now in an easy way that you can make the font on the page. 
+ * You get to choose from 10 pieces
+ * 
+ *  Class for proper operation of the library needs browscap.ini
+ * 
+  * # # # # # # # ###### Browser ##### # # # # # # # # # # # # #
+  * Example of style for opera such as "-o-linear"
+  * Example of style for FIREFOX example, "-moz-linear"
+  * Example for IE style such as "-ms-linear"
+  * Example of style for the W3C as "linear-gradient"
+  * # # # # # # ####### Responsive ##### # # # # # # # # # # # # # # #
+  * Example of style for example 1440px width width: 96%; max-width: 1440px; min-width: 1400px;
+  * Example of style for example, 240px width width: 96%; max-width: 240px; min-width: 230px;
+  * # # # # # # ####### Version css ####### # # # # # # # # # # # # #
+  * Example 3 css style for example, box-shadow: 10px 10px 5px # FFFFFF;
+  * Example 2 css style for example, font-size-adjust: 0.5;
+  * Example CSS style for one such border-left: solid red
+ * 
+ * Klasa do prawidłowego działania potrzebuje biblioteki browscap.ini
+ *  ############# Browser ##################
+ * Przykład stylu dla opera np. "-o-linear"
+ * Przykład stylu dla FIREFOX np. "-moz-linear"
+ * Przykład stylu dla IE np. "-ms-linear"
+ * Przykład stylu dla W3C np. "linear-gradient"
+ * ############# Responsive ####################
+ * Przykład stylu dla width 1440px  np. width: 96%; max-width: 1440px; min-width: 1400px; 
+ * Przykład stylu dla width 240px   np. width: 96%; max-width: 240px; min-width: 230px;
+ * ############# version css ####################
+ * Przykład stylu dla css 3 np. box-shadow: 10px 10px 5px #FFFFFF;
+ * Przykład stylu dla css 2 np. font-size-adjust: 0.5;
+ * Przykład stylu dla css 1 np. border-left: solid red;
+ * 
+ * Do klasy dołożono obsługę czcionek firmy google.
+ *  Teraz w łatwy sposób możesz dołożyć
+ *  interesujące cię czcionki do strony.
+ *  Do wyboru dostajemy 10 szt. 
+ * 
+ * Css_responsive & CssBrowser & CssVersion & Facebook
+ * 
+ * PHP 5.1
+ * @version 1.70
+ * Added support for the Protocol Open Graph Facebook
+ * Added support for the framework Bootstrap
+ * The class made ​​every google font support. 
+ * Now in an easy way that you can make the font on the page. 
+ * You get to choose from 10 piece
+ * @license Apache License, Version 2.0. 
+ * @author Adam Berger <ber34@o2.pl>
+ * @Site www.joomla-cms.com.pl 
+ */ 
  
 class CssResponsive
 {
