@@ -60,7 +60,8 @@ $image_height     = "240"; // height
  $browser->fb_meta_site($site_name, $title, $description, $content_type, $url, $image);
  
  /*
- * meta author & description & keywords & scale responsive & , robots
+ * meta author & description & keywords & scale responsive & robots & telephone
+ * przypisanie meta tag
  */
  $author="Adam Berger";
  $description="Opisz stronę ";    
@@ -69,8 +70,10 @@ $image_height     = "240"; // height
     /* If you wish to use the scale attribute 1 */
  $scale=1;  
  $robots ="noindex"; /* noindex or nofollow */ 
+ 
 /* google site verification key  */
- $verification = "+nxGUDJ4Bsjdi102tLVCNl23908vVuFHs34=";
+ $verification = "+xGUDJ4Bsjdi102tLVC3908vVuFHs=";
+ 
 /* Po uruchomieniu w przeglądarce na telefonie komórkowym określa, czy numery telefonów w treści HTML będzie wyświetlan */
 /* When running in a browser on a mobile phone, determines whether or not telephone numbers in the HTML content will appear */
  $telephone="yes"; /* yes or no */
@@ -82,7 +85,7 @@ $image_height     = "240"; // height
     <meta charset="utf-8">
 <title><?php echo $title; ?></title>
 <?php
-
+/* Wywołanie meta tag */
 echo $browser->set_meta();
 /*
  * FACEBOKE SITE
