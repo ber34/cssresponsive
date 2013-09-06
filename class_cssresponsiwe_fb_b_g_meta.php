@@ -419,13 +419,13 @@ public function fb_meta_site($site_name, $title, $description=null, $content_typ
       if(!empty($keywords)){ /*keywords*/ 
           $this->meta .='<meta name="keywords" content="'.$keywords.'"/>'; /* slowa kluczowe */ 
        }
-      if(!empty($robots)){ /*Scala responsive*/ 
+      if(!empty($robots)){ /* robots */ 
        $this->meta .='<meta name="robots" content="'.$robots.'">'; /* noindex,nofollow */ 
        }
-      if(!empty($verification)){ /*Scala responsive*/ 
+      if(!empty($verification)){ /* verification */ 
        $this->meta .='<meta name="google-site-verification" content="'.$verification.'"/>'; /* google site verification key */ 
        }
-      if(!empty($telephone)){ /*Scala responsive*/
+      if(!empty($telephone)){ /* telephone */
         /* Po uruchomieniu w przeglądarce na telefonie komórkowym określa, czy numery telefonów w treści HTML będzie wyświetlan */
         /*When running in a browser on a mobile phone, determines whether or not telephone numbers in the HTML content will appear*/
        $this->meta .='<meta name="format-detection" content="telephone='.$telephone.'"/>';  /* yes or no*/
