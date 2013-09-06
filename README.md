@@ -18,7 +18,7 @@ The class made ​​every google font support.
 Now in an easy way that you can make the font on the page. 
 You get to choose from 10 pieces
 Determination html meta data such as author, description, 
-keywords, telephone number, responsive, copyright, robots
+keywords, telephone number, responsive, copyright, robots, google verification
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Css Responsive jest to Klasa do obsługi  stron html5, jQuery,  CssResponsive,   CssBrowser, CssVersion, Open Graph Facebook. 
 Klasa ma za zadanie  wczytywania  odpowiednich styli css w zależności od przeglądarki
@@ -40,4 +40,4 @@ css responsieive dla urządzeń a także dla naszych aplikacji.
  interesujące cię czcionki do strony.
  Do wyboru dostajemy 10 szt. 
  Określenie meta danych dla html takie jak:
- autor, opis, słowa kluczowe, numer telefonu, responsive, copyright, robots
+ autor, opis, słowa kluczowe, numer telefonu, responsive, copyright, robots, google kod verification
