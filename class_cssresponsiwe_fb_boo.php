@@ -95,7 +95,7 @@ class CssResponsive
     const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';/* jQuery*/
     const BootstrapCss = '<link rel="stylesheet" href="../zarabiarka/css/bootstrap.css" />';/* Bootstrap */
     const BootstrapCssResponsive = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap-responsive.css" />';/* Bootstrap css responsive*/
-    const BootstrapJavascript = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap.js" />';/*Bootstrap javascript*/
+    const BootstrapJavascript = '<script src="../zarabiarka/js/bootstrap.js"></script>'; /*Bootstrap javascript*/
     const HTML_IE = '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->';
   #############################################################################################################################
     
