@@ -89,10 +89,10 @@ class CssResponsive
     const CSS_685 = '<link rel="stylesheet" href="../Responsive/css/styll.685.css" />';/*685*/
     const CSS_600 = '<link rel="stylesheet" href="../Responsive/css/styll.600.css" />';/*600*/
     const CSS_568 = '<link rel="stylesheet" href="../Responsive/css/styll.568.css" />';/*568*/
-    const CSS_480 = '<link rel="stylesheet" href="../Responsive/css/styll.480.css" />';/*480*/
-    const CSS_380 = '<link rel="stylesheet" href="../Responsive/css/styll.380.css" />';/*380*/
-    const CSS_320 = '<link rel="stylesheet" href="../Responsive/css/styll.320.css" />';/* 320*/
-    const CSS_240 = '<link rel="stylesheet" href="../Responsive/css/styll.240.css" />';/*240*/
+    const CSS_480 = '<link rel="stylesheet" href="../Responsive/css/styll.480.css" />'; /*480*/
+    const CSS_380 = '<link rel="stylesheet" href="../Responsive/css/styll.380.css" />'; /*380*/
+    const CSS_320 = '<link rel="stylesheet" href="../Responsive/css/styll.320.css" />'; /* 320*/
+    const CSS_240 = '<link rel="stylesheet" href="../Responsive/css/styll.240.css" />'; /*240*/
     const CSS_W3C_RE = '<link rel="stylesheet" href="../Responsive/css/styll.w3c.css" />'; /* W3C */
     ######################################### Css version ###################################################
     const CSS_1 = '<link rel="stylesheet" href="../Responsive/css/css.1.css" />'; /* Css 1 */
@@ -107,7 +107,7 @@ class CssResponsive
     const JQueryCss = '<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />';/* jQuery*/
     const BootstrapCss = '<link rel="stylesheet" href="../zarabiarka/css/bootstrap.css" />';/* Bootstrap */
     const BootstrapCssResponsive = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap-responsive.css" />';/* Bootstrap css responsive*/
-    const BootstrapJavascript = '<link rel="stylesheet" href="../zarabiarka/js/bootstrap.js" />';/*Bootstrap javascript*/
+    const BootstrapJavascript = '<script src="../zarabiarka/js/bootstrap.js"></script>';/*Bootstrap javascript*/
     const HTML_IE = '<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->';
      #######################################  Font Google ########################################### 
         /*
