@@ -84,6 +84,9 @@ class CssResponsive
     const CSS_1440 = '<link rel="stylesheet" href="../Responsive/css/styll.1440.css" />'; /*1440*/
     const CSS_1360 = '<link rel="stylesheet" href="../Responsive/css/styll.1360.css" />';/* 1360*/
     const CSS_1280 = '<link rel="stylesheet" href="../Responsive/css/styll.1280.css" />'; /*1280*/
+    const CSS_1280x1024 = '<link rel="stylesheet" href="../Responsive/css/styll.1280x800.css" />'; /* 1280 x800*/
+	   const CSS_1280x800 = '<link rel="stylesheet" href="../Responsive/css/styll.1280x800.css" />'; /* 1280 x800*/
+	   const CSS_1280x600 = '<link rel="stylesheet" href="../Responsive/css/styll.1280x600.css" />'; /* 1280 x800*/
     const CSS_1152 = '<link rel="stylesheet" href="../Responsive/css/styll.1152.css" />'; /*1152*/
     const CSS_1024 = '<link rel="stylesheet" href="../Responsive/css/styll.1024.css" />';/* 1024x768*/
     const CSS_800 = '<link rel="stylesheet" href="../Responsive/css/styll.800.css" />'; /*800*/
@@ -201,6 +204,9 @@ class CssResponsive
     public  $css_1440;
     public  $css_1360;
     public  $css_1280;
+    public  $css_1280x1024;
+	   public  $css_1280x800;
+	   public  $css_1280x600;
     public  $css_1152;
     public  $css_1024;
     public  $css_800; 
@@ -255,6 +261,9 @@ class CssResponsive
         $this->css_1440 = self::CSS_1440;
         $this->css_1360 = self::CSS_1360;
         $this->css_1280 = self::CSS_1280;
+        $this->css_1280x1024 = self::CSS_1280x1024;
+		      $this->css_1280x800 = self::CSS_1280x800;
+      		$this->css_1280x600 = self::CSS_1280x600;
         $this->css_1152 = self::CSS_1152;
         $this->css_1024 = self::CSS_1024;
         $this->css_800 = self::CSS_800;
@@ -729,13 +738,13 @@ rezolution height
                   $this->responsive=$this->css_1280;
                /* echo "jest w tabl 1200";*/
                 if(in_array($this->cookies_height, $range_height5)){
-                    $this->responsive=$this->css_1024;
+                    $this->responsive=$this->css_1280x1024;
                     /* echo "jest w tabl height 1024"; window 1200 x 1024*/
                 }elseif(in_array($this->cookies_height, $range_height4)){
-                     $this->responsive=$this->css_800;
+                     $this->responsive=$this->css_1280x800;
                     /* echo "jest w tabl height 960"; window 1200 x 960*/
                     }elseif(in_array($this->cookies_height, $range_height2)){
-                         $this->responsive=$this->css_600;
+                         $this->responsive=$this->css_1280x600;
                        /* echo "jest w tabl heigh 600"; Kindle landscape 1200 x 768*/
                         }else{
                            $this->responsive=$this->css_w3c_re; /* Standart W3C*/
