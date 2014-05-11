@@ -44,3 +44,6 @@ css responsieive dla urządzeń a także dla naszych aplikacji.
  
  Demo do przetestowania link
  http://www.prezenty-zyczenia.pl/class_responsive/index_fb_go_meta-v2.php
+ 
+ Opis funkcjonalności i co zmieniono w v2
+ http://www.joomla-cms.com.pl/pl/class-php/responsive-css-v2.html
