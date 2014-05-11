@@ -41,3 +41,6 @@ css responsieive dla urządzeń a także dla naszych aplikacji.
  Do wyboru dostajemy 10 szt. 
  Określenie meta danych dla html takie jak:
  autor, opis, słowa kluczowe, numer telefonu, responsive, copyright, robots, google kod verification
+ 
+ Demo do przetestowania link
+ http://www.prezenty-zyczenia.pl/class_responsive/index_fb_go_meta-v2.php
